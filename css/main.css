@@ -13,6 +13,7 @@ a {
   transition: color 0.3s ease;
   -webkit-transition: color 0.3s ease;
 }
+
 #lightbox {
   position: fixed;
   top:0;
@@ -20,6 +21,10 @@ a {
   width:100%;
   height: 100%;
   background: rgba(0,0,0,.7) repeat;
+}
+#lightbox ul {
+  text-align: center;
+  color: white;
 }
 a:hover {
 	color:grey;
@@ -60,12 +65,13 @@ a:hover {
   display: inline;
   padding: 0 1.5em;
 }
-#nav li:last-child {
-  display: none;
-}
 #nav li:first-child {
   display:none;
 }
+#nav li:last-child {
+  display: none;
+}
+
 #nav li button {
   color: white;
 }
@@ -175,16 +181,24 @@ footer h4 {
 
 footer ul {
   list-style: none;
-  line-height: .04em;
 }
-
+footer li {
+  padding: 0 0;
+}
 
 footer p {
   font-size: 0.8em;
+  line-height: .9em;
+
+}
+
+#address {
+  line-height: .989em;
 }
 ul.social {
   margin-top: 3em;
 }
+
  li.social {
   width: 20px;
   height: 20px;
