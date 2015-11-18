@@ -14,18 +14,8 @@ a {
   -webkit-transition: color 0.3s ease;
 }
 
-#lightbox {
-  position: fixed;
-  top:0;
-  left: 0;
-  width:100%;
-  height: 100%;
-  background: rgba(0,0,0,.7) repeat;
-}
-#lightbox ul {
-  text-align: center;
-  color: white;
-}
+
+
 a:hover {
 	color:grey;
 }
@@ -61,7 +51,6 @@ a:hover {
 }
 #nav li {
 	color: white;
-	overflow: hidden;
   display: inline;
   padding: 0 1.5em;
 }
@@ -206,14 +195,27 @@ ul.social {
   padding: 0 .5em;
 }
 
-
+#lightbox {
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,.7) repeat;
+  z-index: 99999;
+}
+#lightbox li {
+ text-align: center;
+ color: white;
+  list-style: none;
+}
 /*Media Queries*/
 
 @media only screen and (max-width: 812px) {
   #nav li {
     display:none;
     width: 100%;
-
   }
   #nav li:last-child {
   display: inline;
