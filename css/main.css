@@ -181,16 +181,24 @@ footer h4 {
 
 footer ul {
   list-style: none;
-  line-height: .04em;
 }
-
+footer li {
+  padding: 0 0;
+}
 
 footer p {
   font-size: 0.8em;
+  line-height: .9em;
+
+}
+
+#address {
+  line-height: .989em;
 }
 ul.social {
   margin-top: 3em;
 }
+
  li.social {
   width: 20px;
   height: 20px;
