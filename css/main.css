@@ -54,14 +54,12 @@ a:hover {
   display: inline;
   padding: 0 1.5em;
 }
-#nav li:first-child {
-  display:none;
-}
-#nav li:last-child {
+
+#nav button {
   display: none;
 }
 
-#nav li button {
+#nav button {
   color: white;
 }
 .logo {
@@ -205,11 +203,20 @@ ul.social {
   background: rgba(0,0,0,.7) repeat;
   z-index: 99999;
 }
+#lightbox ul {
+  padding-top: 5em;
+}
+#lightbox i {
+  margin-right: 12em;
+}
 #lightbox li {
  text-align: center;
  color: white;
   list-style: none;
+  padding-top: 0.5em;
 }
+
+
 /*Media Queries*/
 
 @media only screen and (max-width: 812px) {
@@ -217,7 +224,7 @@ ul.social {
     display:none;
     width: 100%;
   }
-  #nav li:last-child {
+  #nav button {
   display: inline;
   margin-right:-2em;
 }

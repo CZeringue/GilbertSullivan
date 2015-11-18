@@ -3,11 +3,11 @@ $(document).ready(function() {
 
 $('#nav').find('button').on('click', function () {
 	$(this).hide();
-	$('#lightbox').css('display','block');
+	$('#lightbox').slideToggle();
 });
 
 $('#lightbox').find('i').on('click',function() {
-	$('#lightbox').css('display','none');
+	$('#lightbox').slideToggle();
 	$('#nav').find('button').show();
 })
 	
