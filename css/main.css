@@ -14,18 +14,8 @@ a {
   -webkit-transition: color 0.3s ease;
 }
 
-#lightbox {
-  position: fixed;
-  top:0;
-  left: 0;
-  width:100%;
-  height: 100%;
-  background: rgba(0,0,0,.7) repeat;
-}
-#lightbox ul {
-  text-align: center;
-  color: white;
-}
+
+
 a:hover {
 	color:grey;
 }
@@ -34,7 +24,7 @@ a:hover {
 	height: 41em;
 	background-image: url("../img/G&Sbg1.jpg");
 	background-size: cover;
-	background-position: left center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: absolute;
 }
@@ -61,18 +51,15 @@ a:hover {
 }
 #nav li {
 	color: white;
-	overflow: hidden;
   display: inline;
   padding: 0 1.5em;
 }
-#nav li:first-child {
-  display:none;
-}
-#nav li:last-child {
+
+#nav button {
   display: none;
 }
 
-#nav li button {
+#nav button {
   color: white;
 }
 .logo {
@@ -206,6 +193,31 @@ ul.social {
   padding: 0 .5em;
 }
 
+#lightbox {
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,.7) repeat;
+}
+#lightbox ul {
+  padding-top: 5em;
+}
+#lightbox i {
+ position: fixed;
+ top:3em;
+ right: 3em;
+}
+#lightbox li {
+ text-align: center;
+ color: white;
+  list-style: none;
+  padding-top: 0.5em;
+}
+
+
 
 /*Media Queries*/
 
@@ -213,13 +225,11 @@ ul.social {
   #nav li {
     display:none;
     width: 100%;
-
   }
-  #nav li:last-child {
+  #nav button {
   display: inline;
   margin-right:-2em;
 }
-
 
 }
 
