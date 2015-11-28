@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 $('#nav').find('button').on('click', function () {
-	$(this).hide();
+	$(this).css('display', 'none');
 	$('#lightbox').slideToggle('slow');
 });
 
