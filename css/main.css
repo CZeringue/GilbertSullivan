@@ -31,7 +31,7 @@ a:hover {
 /*nav*/
 .hero nav {
 	position: absolute;
-  max-width: 960px;
+  max-width: 1096px;
   font-weight: bolder;
 }
 .events span {
@@ -217,7 +217,15 @@ ul.social {
   padding-top: 0.5em;
 }
 
-
+/*Coming Events Page */
+#comingEvents {
+height: 25em;
+ background-image: url("../img/comingevents.jpg");
+ background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+}
 
 /*Media Queries*/
 
