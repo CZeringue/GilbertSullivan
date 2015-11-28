@@ -26,10 +26,10 @@ a:hover {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: absolute;
+
 }
 /*nav*/
-.hero nav {
+.hero nav, #comingEvents nav {
 	position: absolute;
   max-width: 1096px;
   font-weight: bolder;
@@ -37,7 +37,7 @@ a:hover {
 .events span {
 	font-size: 2em;
 }
-.hero nav {
+.hero nav, #comingEvents nav {
 	margin-left: 2em;
   position: relative;
 }
@@ -219,13 +219,52 @@ ul.social {
 
 /*Coming Events Page */
 #comingEvents {
-height: 25em;
- background-image: url("../img/comingevents.jpg");
- background-size: cover;
+  height: 30em;
+  background-image: url("../img/comingevents.jpg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: absolute;
+ 
 }
+
+#etitle {
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  height: 5em;
+  text-decoration: underline;
+  font-family: 'Abril Fatface', cursive;
+  word-spacing: .2em;
+  letter-spacing: .1em;
+}
+/*Event list wrapper*/
+#eventlist  {
+  list-style: none;
+  font-weight: 700;
+  width: 80%;
+  margin: 0 auto;
+}
+/*Styling of event list blocks*/
+#eventlist li {
+display: inline-block;
+padding: 2em;
+margin: 1em;
+font-family: 'Open Sans', sans-serif;
+font-size: .8em;
+background-color: #C5C6C8;
+width: 12.5em;
+height: 12.5em;
+transition: background-color, 0.8s, ease;
+transition: color, 0.8s, ease;
+}
+/*Event list transition*/
+#eventlist li:hover {
+  background-color:#28231D;
+  color: white;
+  cursor: pointer;
+}
+
 
 /*Media Queries*/
 
@@ -240,6 +279,12 @@ height: 25em;
 }
 
 }
+@media only screen and (max-width: 540px) {
 
+  #eventlist li {
+  margin-top: 8em;
+  font-size: .6em;
+}
+}
 
 
