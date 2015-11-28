@@ -240,16 +240,17 @@ ul.social {
 }
 /*Event list wrapper*/
 #eventlist  {
+  padding-top: 1em;
   list-style: none;
   font-weight: 700;
-  width: 80%;
-  margin: 0 auto;
+  text-align: center;
+
 }
 /*Styling of event list blocks*/
 #eventlist li {
 display: inline-block;
 padding: 2em;
-margin: 1em;
+margin: .5em 1em;
 font-family: 'Open Sans', sans-serif;
 font-size: .8em;
 background-color: #C5C6C8;
@@ -264,6 +265,7 @@ transition: color, 0.8s, ease;
   color: white;
   cursor: pointer;
 }
+
 
 
 /*Media Queries*/
